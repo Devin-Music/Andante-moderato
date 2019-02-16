@@ -36,6 +36,7 @@ scoreATrumpetBbI = \relative c'' {
   f4~f16 fis g gis |%m15
   gis2~ |%m16
   gis4 gis |%m17
+      %NO BAD DAYS
   gis4\( a8.\) a16 |%m18
   f'4~f16 e d cis |%m19
   d4 d, |%m20
@@ -88,7 +89,33 @@ scoreAHornF = \relative c'' {
 
 scoreATrombone = \relative c {
   \global
-  % Music follows here.
+    \repeat volta 2 {
+  a'4 cis |%m1
+  d d,~ |%m2
+  d d |%m3
+  d2 |%m4
+  d4 e|%m5
+  e2 |}%m6
+    \alternative{
+    {d4. a8 | a2|}%m7-8
+    {f'8 d d cis|}}%m9
+  cis4 d8 c |%m10 
+  f4 ges |%m11
+  g a8 a |%m12
+  bes4 bes |%m13
+  f2 |%m14
+  f |%m15
+  f2~ |%m16
+  f8 d e f |%m17
+  f4\(e8\) r |%m18
+  a4 cis |%m19
+  d d,~ |%m20
+  d d |%m21
+  d2 |%m22
+  d4 d |%m23
+  d bes'16 g fis g |%m24
+  f d cis bes e8 d |%m25
+  f2 |%m26
   
 }
 
@@ -122,7 +149,7 @@ scoreATrombonePart = \new Staff \with {
 scoreATubaPart = \new Staff \with {
   instrumentName = "Tuba"
   midiInstrument = "tuba"
-} \scoreATuba
+} {\clef bass \scoreATuba}
 
 \score {
   <<
