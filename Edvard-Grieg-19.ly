@@ -44,7 +44,7 @@ scoreATrumpetBbI = \relative c'' {
   a8 g4 f8 |%22
   f16 e dis e g fis eis fis |%m23
   a g fis g d' bes a bes |%m24
-  a8 a a4 |%m25
+  a8 a cis16 bes a g |%m25
   a2 \bar "|." |%m26
 }
 
@@ -76,19 +76,45 @@ scoreATrumpetBbII = \relative c'' {
   d2 |%m22
   bes4 c |%m23
   d d |%m24
-  d16 f e d cis bes a g |%m25
-  a2 |%m26
+  d16 f e d e8 d~ |%m25
+  d2 |%m26
 }
 
 scoreAHornF = \relative c'' {
   \global
-  \transposition f
-  % Music follows here.
-  
+  \transposition bes
+    \repeat volta 2 {
+  a4 cis |%m1
+  d4 d,~ |%m2
+  d d |%m3
+  d2 |%m4
+  d4 e |%m5
+  e2 |}%m6
+    \alternative {
+  {d'4. a8 | f2 |}%m7-8 
+  {f8 d d cis |}}%m9
+  cis4 d8 c |%m10   
+  f4 ges |%m11
+  g a8 a |%m12
+  bes4 bes |%m13
+  f2 |%m14
+  f |%m15
+  f~ |%m16
+  f8 d e f |%m17
+  f4\( e8\) r |%m18
+  a4 cis |%m19
+  d d,~ |%m20
+  d d |%m21
+  d2 |%m22
+  d4 d |%m23
+  d bes'16 g fis g |%m24
+  a8 a a4 |%m25
+  f2
 }
 
 scoreATrombone = \relative c {
   \global
+  \transposition bes
     \repeat volta 2 {
   a'4 cis |%m1
   d d,~ |%m2
@@ -113,17 +139,42 @@ scoreATrombone = \relative c {
   d d |%m21
   d2 |%m22
   d4 d |%m23
-  d bes'16 g fis g |%m24
-  f d cis bes e8 d |%m25
-  f2 |%m26
+  d r |%m24
+  f16 d cis bes e8 d~ |%m25
+  d2 |%m26
   
 }
 
 scoreATuba = \relative c'' {
   \global
   \transposition bes,
-  
-  
+    \repeat volta 2 {
+  d,,4 e |%m1
+  f f,8fis |%m2
+  g4 a |%m3
+  bes a |%m4
+  gis b8 bes |%m5
+  a4. g8 |}%m6
+    \alternative{
+  {f4 e'16 d cis bes | bes4 a |}%m7-8
+  {f8 g a4 |}}%m9
+  d,4. r8 |%m10 
+  bes'2 |%m11
+  bes |%12
+  bes |%m13
+  f2 |%m14
+  a4 bes |%m15
+  b2 |%m16
+  bes |%m17
+  a |%m18
+  d4 e |%m19
+  f4 f,8 fis |%m20
+  g4 a |%m21
+  bes a |%m22
+  g a |%m23
+  bes g |%m24
+  a a16 g f e |%m25
+  d2 |%m26
 }
 
 scoreATrumpetBbIPart = \new Staff \with {
